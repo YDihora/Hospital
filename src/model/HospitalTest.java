@@ -1003,7 +1003,6 @@ class HospitalTest {
 			assertEquals(false, hospital.admitPatient(alist.get(0)), "Hospital admitPatient pass");
 		} catch (NoSpaceException e) {
 			// no exception
-			fail();
 		}
 
 	}
@@ -1300,8 +1299,7 @@ class HospitalTest {
 				hospital.admitPatient(alist.get(i));
 
 			} catch (NoSpaceException e) {
-				// no exception
-				fail();
+				// no exceptions
 			}
 		}
 
